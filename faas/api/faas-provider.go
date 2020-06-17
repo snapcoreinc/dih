@@ -110,9 +110,16 @@ type Secret struct {
 }
 
 type ScaleServiceRequest struct {
-	ServiceName string `json:"serviceName"`
-	Replicas    uint64 `json:"replicas"`
-	//TODO: add memory & cpu, min & max
+	ServiceName      string `json:"serviceName"`
+	ServiceNamespace string `json:"serviceNamespace"`
+	Replicas         uint64 `json:"replicas"`
+	//TODO: orefalo - add more parameters
+	ReplicasMin    uint64 `json:"replicasMin"`
+	ReplicasMax    uint64 `json:"replicasMax"`
+	ReplicasFactor uint64 `json:"replicasFactor"`
+	AutoScale      uint64 `json:"autoscale"`
+	MemoryLimit    string `json:"memoryLimit"`
+	CpuLimit       string `json:"cpuLimit"`
 }
 
 // InfoResponse provides information about the underlying provider
