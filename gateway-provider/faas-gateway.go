@@ -1,4 +1,4 @@
-package api
+package gateway_provider
 
 // DeleteFunctionRequest delete a deployed function
 type DeleteFunctionRequest struct {

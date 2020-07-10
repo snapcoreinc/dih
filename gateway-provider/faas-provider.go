@@ -1,4 +1,4 @@
-package api
+package gateway_provider
 
 import (
 	"fmt"
