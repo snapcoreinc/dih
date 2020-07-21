@@ -44,5 +44,5 @@ type Request struct {
 
 // RequestQueuer can public a request to be executed asynchronously
 type RequestQueuer interface {
-	Queue(req *Request) error
+	Publish(req *Request) error
 }
