@@ -5,7 +5,6 @@ package async
 
 import (
 	"net/http"
-	"net/url"
 )
 
 // Request for asynchronous processing
@@ -36,10 +35,10 @@ type Request struct {
 
 	// QueueName to publish the request to, leave blank
 	// for default.
-	QueueName string
+	// QueueName string
 
-	// Used by queue worker to submit a result
-	CallbackURL *url.URL `json:"CallbackUrl"`
+	// // Used by queue worker to submit a result
+	// CallbackURL *url.URL `json:"CallbackUrl"`
 }
 
 // RequestQueuer can public a request to be executed asynchronously
