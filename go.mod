@@ -1,3 +1,3 @@
-module github.com/snapcoreinc/dih
+module github.com/snapcoreinc/dih-golang-sdk
 
 go 1.14
