@@ -54,5 +54,5 @@ func (r *Request) WithContext(ctx context.Context) {
 
 // ModuleHandler used for a serverless Go method invocation
 type ModuleHandler interface {
-	handleRequest(ctx Context, req Request) (Response, error)
+	HandleRequest(ctx *Context, req *Request) (Response, error)
 }
